@@ -13,9 +13,6 @@ class MeuArray {
     this.#tamanho = this.#items.length;
     }
 
-    // editar(indice, novoValor){
-    //     this.#items[indice]= novoValor;
-    // }
      editar(indice, novoValor){
         if(indice < 0 || indice >= this.#tamanho){
             console.log("Insira um índice válido");
@@ -45,12 +42,7 @@ class MeuArray {
         this.#tamanho = this.#items.length;
         return removido;
     }
-    // obterElemento(indice){
-    //     if(indice < 0 || indice >= this.#tamanho){
-    //         return undefined;
-    //     }
-    //     return this.#items[indice];
-    // }
+  
     //Valor de uma posição
     obterElemento(indice){
         if(indice < 0 || indice >= this.#tamanho){
@@ -156,14 +148,6 @@ class MeuArray {
 }
 
 
-
-//  removerValor(elemento) {
-//     const indice = this.obterIndice(elemento);
-//     if (indice === -1) {
-//         return undefined;
-//     }
-//     return this.removerIndice(indice);
-// }
   removerValor(elemento) {
     const indice = this.obterIndice(elemento);
     if (indice === -1) {
